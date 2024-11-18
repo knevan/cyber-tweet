@@ -40,6 +40,7 @@ st.title("Aplikasi Prediksi Sentiment Cyberbullying")
 # Input teks dari pengguna
 user_input = st.text_area("Masukkan teks tweet Anda di sini:")
 
+# if
 if st.button("Prediksi"):
     result = run_ml_app(user_input, model, tfidf_vectorizer)
     sentiments = ["Religion", "Age", "Ethnicity", "Gender", "Not Cyberbullying"]
