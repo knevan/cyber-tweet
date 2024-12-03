@@ -5,17 +5,24 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "en-core-web-md",
     "gensim>=4.3.3",
     "jupyter>=1.1.1",
+    "lightgbm>=4.5.0",
     "nltk>=3.9.1",
     "scikit-learn>=1.5.2",
     "seaborn>=0.13.2",
     "spacy>=3.7.5",
     "symspellpy>=6.7.8",
+    "transformers>=4.46.3",
     "wordcloud>=1.9.3",
 ]
 
 [dependency-groups]
 dev = [
     "pip>=24.3.1",
+    "ruff>=0.8.1",
 ]
+
+[tool.uv.sources]
+en-core-web-md = { url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.7.1/en_core_web_md-3.7.1.tar.gz" }
